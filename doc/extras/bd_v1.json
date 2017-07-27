@@ -1,0 +1,97 @@
+{
+  "agenda" : {
+    "id_agendamento" : {
+      "endereco" : "rua das bananas 123",
+      "id_cliente" : "id",
+      "id_estabelecimento" : "id",
+      "id_profissional" : "id",
+      "timestamp" : "timestamp"
+    }
+  },
+  "avaliacoes" : {
+    "id_avaliacao" : {
+      "anonimo" : "true/false",
+      "descricao" : "otimo servico",
+      "id_cliente" : "id",
+      "id_estabelecimento" : "id",
+      "id_profissional" : "id",
+      "nota" : 5
+    }
+  },
+  "clientes" : {
+    "id_cliente" : {
+      "agenda" : [ "id_agendamento" ],
+      "amigos" : [ "id_amigo" ],
+      "avaliacoes" : [ "id_avaliacao" ],
+      "compras" : [ "id_compra" ],
+      "email" : "teste@teste.com",
+      "endereco" : "rua das pitangas 123",
+      "favoritos" : [ "id_profissional/id_estabelecimento" ],
+      "foto" : "foto url",
+      "id_profissional" : "id",
+      "nome" : "fulano",
+      "social" : [ "id_social" ],
+      "telefone" : "(00)0000-0000"
+    }
+  },
+  "compras" : {
+    "id_compra" : {
+      "agendamento" : "id_agendamento",
+      "id_cliente" : "id",
+      "id_estabelecimento" : "id",
+      "metodo_pagamento" : "tipo (débito/crédito, sei lá)",
+      "presente" : {
+        "entregue" : "true/false",
+        "id_cliente" : "id"
+      },
+      "profissionais" : [ "id_profissional" ],
+      "servicos" : [ "id_servico" ],
+      "timestamp" : "timestamp",
+      "valor_total" : "100,00"
+    }
+  },
+  "descobertas" : {
+    "tipo_categoria" : {
+      "id_descoberta" : [ "id_profissional/estabelecimento" ]
+    }
+  },
+  "estabelecimentos" : {
+    "id_estabelecimento" : {
+      "avaliacoes" : [ "id_avaliacao" ],
+      "email" : "teste@teste.com",
+      "endereco" : "rua das acerolas 123",
+      "foto" : "foto url",
+      "servicos" : [ "id_servico" ],
+      "sobre" : "descricao",
+      "telefone" : "(11)11111-1111"
+    }
+  },
+  "profissionais" : {
+    "id_profissional" : {
+      "agenda" : [ "id_agendamento" ],
+      "avaliacoes" : [ "id_avaliacao" ],
+      "id_cliente" : "id",
+      "servicos" : [ "id_servico" ]
+    }
+  },
+  "servicos" : {
+    "tipo_categoria" : {
+      "id_servico" : {
+        "id_estabelecimento" : "id",
+        "id_profissional" : "id",
+        "nome" : "nome do servico",
+        "tempo" : 120,
+        "valor" : "50,00"
+      }
+    }
+  },
+  "social" : {
+    "id_postagem" : {
+      "id_agendamento" : "id",
+      "id_avaliacao" : "id",
+      "id_cliente" : "id",
+      "id_estabelecimento" : "id",
+      "id_profissional" : "id"
+    }
+  }
+}
