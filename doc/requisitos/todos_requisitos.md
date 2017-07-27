@@ -1,4 +1,8 @@
-## WEB (ADM)
+* [Web (adm)](#web)
+* [App](#app)
+* [Dash](#dash)
+
+## Web ##
 **RF01**: O sistema deve cadastrar categorias de serviços    
 **RF02**: O sistema deve listar categorias de serviços    
 **RF03**: O sistema deve gerenciar categorias de serviços    
@@ -37,7 +41,7 @@
 **RF66**: O sistema deve exibir termos de uso    
 **RF67**: O sistema deve exibir política de privacidade    
 
-## APP
+## App ##
 **RF02**: O sistema deve listar categorias de serviços    
 **RF04**: O sistema deve buscar categorias de serviços    
 **RF09**: O sistema deve listar hashtags monitoradas    
@@ -84,5 +88,5 @@
 **RF66**: O sistema deve exibir termos de uso    
 **RF67**: O sistema deve exibir política de privacidade    
 
-## DASH
+## Dash ##
 **RF06**: O sistema deve acessar relatórios de seu uso    
