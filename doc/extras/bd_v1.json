@@ -5,6 +5,8 @@
       "id_cliente" : "id",
       "id_estabelecimento" : "id",
       "id_profissional" : "id",
+      "servicos" : [ "id_servico" ],
+      "status" : "descrição do status",
       "timestamp" : "timestamp"
     }
   },
@@ -36,7 +38,7 @@
   },
   "compras" : {
     "id_compra" : {
-      "agendamento" : "id_agendamento",
+      "id_avaliacao" : "id",
       "id_cliente" : "id",
       "id_estabelecimento" : "id",
       "metodo_pagamento" : "tipo (débito/crédito, sei lá)",
@@ -44,7 +46,6 @@
         "entregue" : "true/false",
         "id_cliente" : "id"
       },
-      "profissionais" : [ "id_profissional" ],
       "servicos" : [ "id_servico" ],
       "timestamp" : "timestamp",
       "valor_total" : "100,00"
@@ -77,6 +78,7 @@
   "servicos" : {
     "tipo_categoria" : {
       "id_servico" : {
+        "domiciliar" : "true/false",
         "id_estabelecimento" : "id",
         "id_profissional" : "id",
         "nome" : "nome do servico",
