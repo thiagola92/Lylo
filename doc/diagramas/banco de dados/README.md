@@ -1,3 +1,3 @@
 # Diagramas
 
-- **bd_v1.xml**: Primeira versão do diagrama do banco de dados
+- **Modelo ER 001.xml**: Primeira versão do diagrama do banco de dados
