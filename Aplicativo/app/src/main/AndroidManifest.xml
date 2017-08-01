@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="lylo.myapplication">
+    package="lylo.lylo">
 
     <application
         android:allowBackup="true"
@@ -9,13 +9,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RegistroActivity" />
+        <activity android:name=".EsperaActivity" />
+        <activity android:name=".SocialActivity" />
+        <activity android:name=".AgendaActivity" />
+        <activity android:name=".AgendaDetalheActivity" />
+        <activity android:name=".MenuLateralActivity" />
+        <activity android:name=".NotificacaoActivity" />
+        <activity android:name=".BuscaActivity" />
+        <activity android:name=".ProfissionalSobreActivity" />
+        <activity android:name=".EstabelecimentoSobreActivity" />
+        <activity android:name=".AgendamentoActivity" />
+        <activity android:name=".ChecarAgendamentoActivity" />
+        <activity android:name=".MarcarAgendamentoActivity" />
+        <activity android:name=".CompraActivity" />
+        <activity android:name=".CarrinhoActivity" />
+        <activity android:name=".DescobertasActivity" />
+        <activity android:name=".DescobertaSobreActivity" />
+        <activity android:name=".HistoricoActivity" />
+        <activity android:name=".HistoricoSobreActivity" />
+        <activity android:name=".FavoritosActivity"></activity>
     </application>
 
 </manifest>

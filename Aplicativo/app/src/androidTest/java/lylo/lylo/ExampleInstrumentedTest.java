@@ -1,4 +1,4 @@
-package lylo.myapplication;
+package lylo.lylo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

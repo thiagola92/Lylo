@@ -1,4 +1,4 @@
-package lylo.myapplication;
+package lylo.lylo;
 
 import org.junit.Test;
 
