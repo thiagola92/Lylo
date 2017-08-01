@@ -1,0 +1,121 @@
+{
+  "agenda" : {
+    "id_agendamento" : {
+      "endereco" : "rua das bananas 123",
+      "id_cliente" : "id",
+      "id_estabelecimento" : "id",
+      "id_profissional" : "id",
+      "servicos" : [ {
+        "id_servico": "id",
+        "hora_agendada": "timestamp"
+      }
+        ],
+      "status" : "descrição do status",
+      "timestamp" : "timestamp"
+    }
+  },
+  "avaliacoes" : {
+    "id_avaliacao" : {
+      "anonimo" : "true/false",
+      "descricao" : "otimo servico",
+      "id_carrinho" : "id",
+      "id_profissional" : "id",
+      "nota" : 5
+    }
+  },
+  "clientes" : {
+    "id_cliente" : {
+      "agenda" : [ "id_agendamento" ],
+      "amigos" : [ "id_amigo" ],
+      "avaliacoes" : [ "id_avaliacao" ],
+	  "cpf": "cpf do cliente",
+      "compras" : [ "id_carrinho" ],
+      "email" : "teste@teste.com",
+      "endereco" : "rua das pitangas 123",
+      "favoritos" : [ "id_profissional/id_estabelecimento" ],
+      "foto" : "foto url",
+      "id_profissional" : "id",
+      "nome" : "fulano",
+      "social" : [ "id_social" ],
+      "telefone" : "(00)0000-0000",
+	  "desconto" : [ {
+		"id_desconto" : "id",
+		"valor" : "valor",
+		"usado": "true/false"
+	  }
+	  ]
+    }
+  },
+  "carrinho" : {
+    "id_carrinho" : {
+      "id_agendamento": "id",
+      "id_avaliacao" : "id",
+      "id_cliente" : "id",
+      "id_estabelecimento" : "id",
+      "metodo_de_pagamento" : {
+		"tipo": "crédito/débito",
+		"cpf_cartao": "cpf do proprietário",
+		"nome_cartao": "nome do proprietário"
+	  },
+      "presente" : {
+        "entregue" : "true/false",
+        "id_cliente" : "id"
+      },
+      "servicos" : [ "id_servico" ],
+      "timestamp" : "timestamp",
+      "valor_total" : "100,00"
+    }
+  },
+  "descobertas" : {
+    "tipo_categoria" : {
+      "id_descoberta" : [ "id_profissional/estabelecimento" ]
+    }
+  },
+  "estabelecimentos" : {
+    "id_estabelecimento" : {
+      "profissionais" : [ "id_profissional" ],
+      "email" : "teste@teste.com",
+      "endereco" : "rua das acerolas 123",
+      "foto" : "foto url",
+      "servicos" : [ "id_servico" ],
+      "sobre" : "descricao",
+      "telefone" : "(11)11111-1111",
+	  "cnpj": "cnpj do estabelecimento"
+    }
+  },
+  "profissionais" : {
+    "id_profissional" : {
+      "agenda" : [ "id_agendamento" ],
+      "avaliacoes" : [ "id_avaliacao" ],
+      "id_cliente" : "id",
+      "servicos" : [ "id_servico" ]
+    }
+  },
+  "servicos" : {
+    "tipo_categoria" : {
+      "id_servico" : {
+        "duracao" : 120,
+        "id_estabelecimento" : "id",
+        "id_profissional" : "id",
+        "nome" : "nome do servico",
+        "preco" : "50,00"
+      }
+    }
+  },
+  "social" : {
+    "id_postagem" : {
+      "id_agendamento" : "id",
+      "id_avaliacao" : "id",
+      "id_cliente" : "id",
+      "id_estabelecimento" : "id",
+      "id_profissional" : "id",
+	  "comentarios": [
+        {
+          "texto": "blablabla",
+          "timestamp": 89736727861827,
+          "cliente_id": "id"
+        } ],
+	  "likes": 9999
+    }
+  }
+}
