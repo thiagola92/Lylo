@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "46403051749",
+    "firebase_url": "https://lylo-87834.firebaseio.com",
+    "project_id": "lylo-87834",
+    "storage_bucket": "lylo-87834.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46403051749:android:83426df65f187445",
+        "android_client_info": {
+          "package_name": "lylo.lylo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46403051749-ai6d081e29vfcjctju4a1lecicsgqu64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXrHyaNrevNsuj_geWGzryCto9-iZ0bIo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
