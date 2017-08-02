@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Lylo</string>
+
+    <string name="login___ja_possui_conta">Já possui conta</string>
+    <string name="login___registrar">Já possui conta</string>
+    <string name="login___login_com_facebook">Já possui conta</string>
+    <string name="login___subtitulo">Já possui conta</string>
 </resources>
