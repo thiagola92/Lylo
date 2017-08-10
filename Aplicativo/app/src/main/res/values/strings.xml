@@ -1,10 +1,15 @@
 <resources>
     <string name="app_name">Lylo</string>
 
-    <string name="login___ja_possui_conta">Já possui conta</string>
-    <string name="login___registrar">Já possui conta</string>
-    <string name="login___login_com_facebook">Já possui conta</string>
-    <string name="login___subtitulo">Já possui conta</string>
+    <!-- LoginActivity -->
+    <string name="TextView_text_AlreadyHaveAnAccount">Já possuo conta</string>
+    <string name="ImageView_text_register">Registrar</string>
+    <string name="TextView_text_subtitle">Apaixone-se Por si. Sempre.</string>
+    <string name="ImageView_contentDescription_logo">Logo</string>
+    <string name="ImageView_contentDescription_facebookLogin">Login usando Faceook</string>
+    <string name="ImageView_contentDescription_register">Register a new account</string>
+    <string name="ImageView_contentDescription_background">Papel de parede</string>
+
     <string name="title_activity_ja_tem_conta">Entrar</string>
 
     <string name="label_emailpassword">Email/Password Authentication</string>
