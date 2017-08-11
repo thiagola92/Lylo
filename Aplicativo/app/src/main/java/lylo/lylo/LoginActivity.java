@@ -18,11 +18,14 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        Log.e("LYLO", "onCreate()");
 
         setFonts();
     }
 
     private void setFonts() {
+        Log.e("LYLO", "setFonts()");
+
         Typeface font_montserrat_extra_light = Typeface.createFromAsset(getAssets(), "fonts/Montserrat-ExtraLight.ttf");
         Typeface font_montserrat_medium = Typeface.createFromAsset(getAssets(), "fonts/Montserrat-Medium.ttf");
 
@@ -39,6 +42,7 @@ public class LoginActivity extends AppCompatActivity {
 
     protected void onResume() {
         super.onResume();
+        Log.e("LYLO", "onResume()");
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
@@ -55,7 +59,8 @@ public class LoginActivity extends AppCompatActivity {
     public void registerAccount(View view) {
         Log.e("LYLO", "registerAccount()");
 
-        Intent intent = new Intent(this, RegistroActivity.class);
+        Intent intent = new Intent(this, SearchActivity.class);
+        //Intent intent = new Intent(this, RegistroActivity.class);
         startActivity(intent);
     }
 

@@ -15,7 +15,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".JaTemContaActivity" />
         <activity android:name=".RegistroActivity" />
         <activity android:name=".EsperaActivity" />
@@ -45,20 +43,21 @@
         <activity android:name=".HistoricoSobreActivity" />
         <activity android:name=".FavoritosActivity" />
 
-   <!-- Facebook Configuration -->
-    <meta-data
-        android:name="com.facebook.sdk.ApplicationId"
-        android:value="@string/facebook_app_id"
-        tools:replace="android:value" />
+        <!-- Facebook Configuration -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
 
-    <activity
-        android:name="com.facebook.FacebookActivity"
-        android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-        android:label="@string/app_name"
-        android:theme="@android:style/Theme.Translucent.NoTitleBar"
-        tools:replace="android:theme" />
-
-</application>
-
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:theme" />
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search"></activity>
+    </application>
 
 </manifest>
