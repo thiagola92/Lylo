@@ -32,7 +32,6 @@
         <activity android:name=".AgendaDetalheActivity" />
         <activity android:name=".MenuLateralActivity" />
         <activity android:name=".NotificacaoActivity" />
-        <activity android:name=".BuscaActivity" />
         <activity android:name=".ProfissionalSobreActivity" />
         <activity android:name=".EstabelecimentoSobreActivity" />
         <activity android:name=".AgendamentoActivity" />

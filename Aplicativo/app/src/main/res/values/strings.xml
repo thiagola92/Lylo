@@ -2,13 +2,16 @@
     <string name="app_name">Lylo</string>
 
     <!-- LoginActivity -->
-    <string name="TextView_text_AlreadyHaveAnAccount">Já possuo conta</string>
-    <string name="ImageView_text_register">Registrar</string>
-    <string name="TextView_text_subtitle">Apaixone-se Por si. Sempre.</string>
-    <string name="ImageView_contentDescription_logo">Logo</string>
-    <string name="ImageView_contentDescription_facebookLogin">Login usando Faceook</string>
-    <string name="ImageView_contentDescription_register">Register a new account</string>
-    <string name="ImageView_contentDescription_background">Papel de parede</string>
+    <string name="activity_login_already_have_an_account">Já possuo conta</string>
+    <string name="activity_login_register">Registrar</string>
+    <string name="activity_login_subtitle">Apaixone-se Por si. Sempre.</string>
+    <string name="activity_login_facebook_button">Entrar com Facebook</string>
+
+    <string name="activity_login_logo_description">Logo</string>
+    <string name="activity_login_facebook_button_description">Login usando Faceook</string>
+    <string name="activity_login_register_button_description">Register a new account</string>
+    <string name="activity_login_smiling_woman_background">smilling_woman_background</string>
+    <string name="activity_login_color_background">color_background</string>
 
     <string name="title_activity_ja_tem_conta">Entrar</string>
 

@@ -5,6 +5,45 @@
     <color name="colorAccent">#FF4081</color>
 
     <!-- ActivityLogin -->
-    <color name="white">#FFFFFF</color>
-    <color name="background">#35D9D0</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Green100">#35d9d0</color>
+    <color name="Green90">#48DCD4</color>
+    <color name="Green80">#5DE0D9</color>
+    <color name="Green70">#70E4DD</color>
+    <color name="Green60">#85E8E2</color>
+    <color name="Green50">#99EBE7</color>
+    <color name="Green40">#ADEFEC</color>
+    <color name="Green30">#C1F3F0</color>
+    <color name="Green20">#D5F7F5</color>
+    <color name="Green10">#E9FAFA</color>
+    <color name="Black100">#000000</color>
+    <color name="Black90">#181818</color>
+    <color name="Black80">#323232</color>
+    <color name="Black70">#4B4B4B</color>
+    <color name="Black60">#656565</color>
+    <color name="Black50">#7E7E7E</color>
+    <color name="Black40">#989898</color>
+    <color name="Black30">#B1B1B1</color>
+    <color name="Black20">#CBCBCB</color>
+    <color name="Black10">#E4E4E4</color>
+    <color name="Blue100">#19313B</color>
+    <color name="Blue90">#2F454E</color>
+    <color name="Blue80">#465A62</color>
+    <color name="Blue70">#5D6E75</color>
+    <color name="Blue60">#748389</color>
+    <color name="Blue50">#8B979C</color>
+    <color name="Blue40">#A2ACB0</color>
+    <color name="Blue30">#B8C0C3</color>
+    <color name="Blue20">#B8C0C3</color>
+    <color name="Blue10">#D0D5D7</color>
+    <color name="Red100">#F4346F</color>
+    <color name="Red90">#F5477D</color>
+    <color name="Red80">#F65C8B</color>
+    <color name="Red70">#F77099</color>
+    <color name="Red60">#F884A8</color>
+    <color name="Red50">#F998B6</color>
+    <color name="Red40">#FAADC5</color>
+    <color name="Red30">#FBC1D3</color>
+    <color name="Red20">#FCD5E1</color>
+    <color name="Red10">#FDE9EF</color>
 </resources>

@@ -2,81 +2,122 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context="lylo.lylo.LoginActivity"
-    tools:layout_editor_absoluteY="25dp"
-    tools:layout_editor_absoluteX="0dp"
-    android:background="@drawable/login_background" >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/activity_login_background_woman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/activity_login_smiling_woman_background"
+        android:paddingEnd="0dp"
+        android:paddingStart="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/activity_login_smiling_woman" />
+
+    <ImageView
+        android:id="@+id/activite_login_background_color"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/activity_login_color_background"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_login_background_woman"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/activity_login_background_woman"
+        app:srcCompat="@drawable/activity_login_azul_base" />
 
     <ImageView
         android:id="@+id/activity_login_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="@string/ImageView_contentDescription_logo"
-        android:src="@drawable/login_lylo_logo"
-        app:layout_constraintBottom_toTopOf="@+id/activity_login_subtitle"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/activity_login_logo_description"
+        android:src="@drawable/activity_login_lylo_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.19999999" />
 
     <TextView
         android:id="@+id/activity_login_subtitle"
         android:layout_width="192dp"
         android:layout_height="wrap_content"
-        android:text="@string/TextView_text_subtitle"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/activity_login_subtitle"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/White"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/activity_login_facebook_login"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_login_logo"
+        app:layout_constraintVertical_bias="0.050000012" />
 
-    <ImageView
-        android:id="@+id/activity_login_facebook_login"
+    <Button
+        android:id="@+id/activity_login_facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/ImageView_contentDescription_facebookLogin"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/activity_login_facebook_button"
+        android:contentDescription="@string/activity_login_facebook_button_description"
         android:onClick="facebookLogin"
-        android:layout_marginBottom="8dp"
+        android:paddingEnd="0dp"
+        android:paddingStart="50dp"
+        android:text="@string/activity_login_facebook_button"
+        android:textAllCaps="false"
+        android:textColor="@color/Green100"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/activity_login_register"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/login_facebook" />
+        app:layout_constraintVertical_bias="0.96" />
 
-    <ImageView
+    <Button
         android:id="@+id/activity_login_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/activity_login_register_button"
+        android:contentDescription="@string/activity_login_register_button_description"
         android:onClick="registerAccount"
-        android:text="@string/ImageView_text_register"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="@string/ImageView_contentDescription_register"
+        android:text="@string/activity_login_register"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/activity_login_already_have_an_account"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/login_registro" />
+        app:layout_constraintVertical_bias="0.95" />
 
     <TextView
         android:id="@+id/activity_login_already_have_an_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
         android:onClick="alreadyHaveAnAccount"
-        android:text="@string/TextView_text_AlreadyHaveAnAccount"
+        android:text="@string/activity_login_already_have_an_account"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/White"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintVertical_bias="0.93" />
 
 </android.support.constraint.ConstraintLayout>
