@@ -65,7 +65,7 @@ public class JaTemContaActivity extends AppCompatActivity implements View.OnClic
         mAuth = FirebaseAuth.getInstance();
         // [END initialize_auth]
         mCallbackManager = CallbackManager.Factory.create();
-        LoginButton loginButton = (LoginButton) findViewById(R.id.facebookLogin);
+        LoginButton loginButton = (LoginButton) findViewById(R.id.facebook_login);
         loginButton.setReadPermissions("email", "public_profile");
         loginButton.registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
             @Override
