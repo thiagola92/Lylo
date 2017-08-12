@@ -57,7 +57,7 @@
             tools:replace="android:theme" />
         <activity
             android:name=".SearchActivity"
-            android:label="@string/title_activity_search"></activity>
+            android:label="@string/activity_search_title"></activity>
     </application>
 
 </manifest>

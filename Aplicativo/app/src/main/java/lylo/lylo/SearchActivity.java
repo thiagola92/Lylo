@@ -9,30 +9,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import lylo.lylo.searchActivity.BottomNavigationListener;
+
 public class SearchActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
-
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
-
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
-                    return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
-                    return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
-                    return true;
-            }
-            return false;
-        }
-
-    };
+    private BottomNavigationListener bottom_navigation_listener = new BottomNavigationListener(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +24,7 @@ public class SearchActivity extends AppCompatActivity {
 
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.activity_search_bottom_navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        navigation.setOnNavigationItemSelectedListener(bottom_navigation_listener);
     }
 
 }

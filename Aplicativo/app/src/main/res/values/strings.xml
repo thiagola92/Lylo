@@ -13,6 +13,12 @@
     <string name="activity_login_smiling_woman_background">smilling_woman_background</string>
     <string name="activity_login_color_background">color_background</string>
 
+    <!-- SearchActivity -->
+    <string name="activity_search_title">SearchActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
     <string name="title_activity_ja_tem_conta">Entrar</string>
 
     <string name="label_emailpassword">Email/Password Authentication</string>
@@ -38,9 +44,5 @@
     <string name="email_fmt">Email: %s</string>
 
     <string name="facebook_app_id">1507552989326327</string>
-    <string name="title_activity_search">SearchActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
 
 </resources>
