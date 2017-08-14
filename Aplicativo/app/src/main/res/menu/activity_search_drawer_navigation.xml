@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/drawer_navigation_historico"/>
+
+    <item
+        android:title="@string/drawer_navigation_promocoes"/>
+
+    <item
+        android:title="@string/drawer_navigation_preferencias"/>
+
+    <item
+        android:title="@string/drawer_navigation_indique_a_um_amigo"/>
+
+    <item
+        android:title="@string/drawer_navigation_metodo_de_pagamento"/>
+
+    <item
+        android:title="@string/drawer_navigation_sobre"/>
+
+    <item
+        android:title="@string/drawer_navigation_sair"/>
+
+</menu>

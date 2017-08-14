@@ -13,7 +13,6 @@ import lylo.lylo.searchActivity.BottomNavigationListener;
 
 public class SearchActivity extends AppCompatActivity {
 
-    private TextView mTextMessage;
     private BottomNavigationListener bottom_navigation_listener = new BottomNavigationListener(this);
 
     @Override
@@ -22,9 +21,8 @@ public class SearchActivity extends AppCompatActivity {
         setContentView(R.layout.activity_search);
         Log.e("LYLO", "onCreate()");
 
-        mTextMessage = (TextView) findViewById(R.id.message);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.activity_search_bottom_navigation);
-        navigation.setOnNavigationItemSelectedListener(bottom_navigation_listener);
+        //BottomNavigationView bottom_navigation = (BottomNavigationView) findViewById(R.id.activity_search_toolbar);
+        //bottom_navigation.setOnNavigationItemSelectedListener(bottom_navigation_listener);
     }
 
 }
